@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WorkHard</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img class="navbar-brand-img" alt="Brand" src="img/logo.png">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <button type="button" onclick="location.href='#'" class="btn btn-default navbar-link">소개</button>
+            <button type="button" onclick="location.href='#panel'" class="btn btn-default navbar-link">패널</button>
+            <button type="button" onclick="location.href='#eval'" class="btn btn-default navbar-link">평가</button>
+            <button type="button" id="login-part" onclick="alert('Github에서는 지원하지 않습니다.');" class="btn btn-default navbar-link-button">로그인</button>
+            <button type="button" id="signup-part" onclick="alert('Github에서는 지원하지 않습니다.');" class="btn btn-default navbar-link-button">회원가입</button>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <section class="section-intro">
+      <div class="container">
+        <div class="col-md-5">
+          <h2><strong>무임승차 없는 팀플 플랫폼</strong></h2>
+          <img class="img-box-logo" src="img/box_logo.png" alt="Logo">
+          <h3 class="h3-divider">팀 내의 모든 학생의 과제 기여를<br>기록하는 서비스</h3>
+          <h6>문서 공유, 동료 평가 등을 통해<br>공정한 성적 평가가 가능합니다</h6>
+        </div>
+        <div class="col-md-7" style="height: 100%;">
+          <img class="img-first" src="img/first.png" alt="Surface">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-panel" id="panel">
+      <div class="container">
+        <div class="col-md-5">
+          <h2><strong>패널</strong></h2>
+          <h3 class="h3-divider">텍스트, 파일 형식의 문서를<br>팀원들과 공유하고 실시간 수정 상황을<br>기록, 확인할 수 있습니다</h3>
+          <h6>따로 조사한 자료들을 한 곳에 모아 관리하고<br>버전 별로 파일을 분리 보관하여<br>편리한 작업 환경을 제공</h6>
+        </div>
+        <div class="col-md-7">
+          <img class="img-second" src="img/second.png" alt="Panel">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-eval" id="eval">
+      <div class="container">
+        <div class="col-md-5">
+          <h2><strong>평가</strong></h2>
+          <h3 class="h3-divider">동료 평가와 평가 결과의 시각화로<br>공정한 성적평가가 가능합니다</h3>
+        </div>
+        <div class="col-md-7">
+          <img class="img-third" src="img/third.png" alt="Evaluation">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img class="img-footer" src="img/box_logo_white.png" alt="Logo">
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
