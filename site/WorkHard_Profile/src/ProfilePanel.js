@@ -17,11 +17,6 @@ class ProfilePanel extends Component {
         </div>
         <div className="container panel-grid">
           <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
         </div>
         <FloatingActionButton style={{
           position: 'absolute',
