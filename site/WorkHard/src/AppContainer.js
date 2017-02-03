@@ -5,6 +5,7 @@ import IconButton from 'material-ui/IconButton';
 import NotificationIcon from 'material-ui/svg-icons/social/notifications';
 import SettingsIcon from 'material-ui/svg-icons/action/settings';
 import SearchIcon from 'material-ui/svg-icons/action/search';
+import Badge from 'material-ui/Badge';
 import AppBar from 'material-ui/AppBar';
 import Logo from './logo.png';
 
@@ -39,9 +40,17 @@ class AppContainer extends Component {
                     asrht1228@gmail.com
                     </span>
                     <span className="caret profile-drop" style={{color: "white"}}></span>
-                    <IconButton className="profile-noti" tooltip="알림">
-                      <NotificationIcon color={"#FFFFFF"} />
-                    </IconButton>
+                    <Badge
+                    className="profile-noti"
+                    badgeContent={10}
+                    secondary={true}
+                    badgeStyle={{width: "20px", height: "20px", top: 5, right: 5, backgroundColor: "red", margin: "0"}}
+                    style={{padding: "0"}}
+                    >
+                      <IconButton tooltip="알림">
+                        <NotificationIcon color={"#FFFFFF"} />
+                      </IconButton>
+                    </Badge>
                     <IconButton className="profile-setting" tooltip="환경 설정">
                       <SettingsIcon color={"#FFFFFF"} />
                     </IconButton>
