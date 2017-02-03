@@ -53,22 +53,27 @@ class PPTPanel extends Component {
               </div>
             </div>
             <div className="col-md-4 pptpanel-right">
+              <a href="#" className="hover-a">
               <div className="pptpanel-revision">
                 <span className="pptpanel-revision-title">서양철학 최종 PPT_v4.pptx</span><br/>
                 <span className="pptpanel-revision-detail">수정사항 제목 폰트를 1px 줄임<br/>수정날짜 2017.02.04 수정자 asrht1228</span>
-              </div>
+              </div></a>
+              <a href="#" className="hover-a">
               <div className="pptpanel-revision-nth">
                 <span className="pptpanel-revision-title">서양철학 최종 PPT_v3.pptx</span><br/>
                 <span className="pptpanel-revision-detail">수정사항 제목 폰트를 1px 줄임<br/>수정날짜 2017.02.04 수정자 asrht1228</span>
-              </div>
+              </div></a>
+              <a href="#" className="hover-a">
               <div className="pptpanel-revision-nth">
                 <span className="pptpanel-revision-title">서양철학 최종 PPT_v2.pptx</span><br/>
                 <span className="pptpanel-revision-detail">수정사항 제목 폰트를 1px 줄임<br/>수정날짜 2017.02.04 수정자 asrht1228</span>
-              </div>
+              </div></a>
+              <a href="#" className="hover-a">
               <div className="pptpanel-revision-nth">
                 <span className="pptpanel-revision-title">서양철학 최종 PPT_v1.pptx</span><br/>
                 <span className="pptpanel-revision-detail">수정사항 제목 폰트를 1px 줄임<br/>수정날짜 2017.02.04 수정자 asrht1228</span>
               </div>
+              </a>
             </div>
           </div>
         </div>

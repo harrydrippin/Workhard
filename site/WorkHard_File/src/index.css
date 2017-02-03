@@ -188,3 +188,7 @@ html, body, #root {
   color: #555555;
   font-size: 0.8em;
 }
+
+.hover-a:hover, .hover-a:focus {
+  text-decoration: none;
+}
