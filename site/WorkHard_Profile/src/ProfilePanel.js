@@ -17,11 +17,6 @@ class ProfilePanel extends Component {
         </div>
         <div className="container panel-grid">
           <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
-          <ContentPanel />
         </div>
         <FloatingActionButton style={{
           position: 'absolute',
@@ -45,10 +40,17 @@ class ContentPanel extends Component {
       <div className="col-md-4 panel-item">
         <div className="panel-item-wrapper">
           <div className="panel-item-header">
-            인터렉티브미디어 리서치 2017.02.25
+            서양철학:쟁점과토론 기말 팀과제 4조
           </div>
           <div className="panel-item-body">
-            {lipsum}
+            자기이해의 윤리학: <strong>소피스트</strong>와 <strong>소크라테스</strong><br />
+            그리고 아나바시스와 카타바시스: <strong>플라톤</strong> 윤리학에 대해 조사하여 발표하세요.<br /><br />평가요소<br />
+
+            (1) 주어진 개념 및 인물에 대한 정확한 이해도 (50%)<br /><br />
+
+(2) 독창성과 논리성(체계성) (30%)<br /><br />
+
+(3) 정성적 평가 (20%)<br />
           </div>
         </div>
       </div>
