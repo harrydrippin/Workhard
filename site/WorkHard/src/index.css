@@ -1,7 +1,13 @@
-body {
+html, body, #root {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: sans-serif;
+  overflow-y: hidden;
+}
+
+.container-fluid {
+  padding: 0 !important;
 }
 
 .service-logo {
@@ -48,7 +54,73 @@ body {
   margin-left: 25px;
 }
 
-.profile-search {
-  vertical-align: middle;
-  margin-left: 25px;
+.divider {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.sidebar {
+  height: 100%;
+}
+
+.panel-wrapper {
+  color: black;
+  background-color: #EEEEEE;
+  height: 100%;
+}
+
+.panel-list {
+  height: 100%;
+  background-color: #EEEEEE;
+  overflow-y: scroll;
+}
+
+.sidebar-title-wrapper {
+  background-color: rgba(240,240,240,1);
+  padding: 18px;
+  padding-left: 40px;
+  color: grey;
+}
+
+.sidebar-list {
+  margin-left: 20px;
+}
+
+.panel-header {
+  background-color: rgba(40, 40, 40, 1);
+  padding: 18px;
+  padding-left: 30px;
+  color: white;
+}
+
+.panelitem-wrapper {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.panelitem-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.panelitem-area {
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.panelitem-area-header {
+  background-color: #DDDDDD;
+  padding: 10px 20px;
+}
+
+.panelitem-area-author {
+  margin-left: 15px;
+}
+
+.panelitem-area-detail {
+  position: relative;
+  padding: 20px;
+  padding-bottom: 50px;
+  color: grey;
 }

@@ -4,10 +4,13 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import IconButton from 'material-ui/IconButton';
 import NotificationIcon from 'material-ui/svg-icons/social/notifications';
 import SettingsIcon from 'material-ui/svg-icons/action/settings';
-import SearchIcon from 'material-ui/svg-icons/action/search';
 import Badge from 'material-ui/Badge';
 import AppBar from 'material-ui/AppBar';
+import SideBar from './SideBar';
+import TextPanel from './TextPanel';
 import Logo from './logo.png';
+
+var $ = require('jquery');
 
 class AppContainer extends Component {
   constructor() {
@@ -21,13 +24,35 @@ class AppContainer extends Component {
         appBar: {
           height: 60,
         },
-      })
+      }),
+      memberData: {}
     };
+  }
+ // 58을 더 빼
+  componentDidMount() {
+    $('.divider').css('height', function() {
+            return window.innerHeight - 168;
+    });
+
+    $('.panel-list').css('height', function() {
+            return window.innerHeight - 120;
+    });
+
+    $(window).resize(function() {
+        $('.divider').css('height', function() {
+            return window.innerHeight - 200;
+        });
+
+        $('.panel-list').css('height', function() {
+                return window.innerHeight - 226;
+        });
+    });
   }
 
   render() {
     return (
       <MuiThemeProvider muiTheme={this.state.muiTheme}>
+      <div className="wrapper">
         <AppBar title=""
                 iconElementLeft={<img src={Logo}
                                       role="presentation"
@@ -54,9 +79,6 @@ class AppContainer extends Component {
                     <IconButton className="profile-setting" tooltip="환경 설정">
                       <SettingsIcon color={"#FFFFFF"} />
                     </IconButton>
-                    <IconButton className="profile-search" tooltip="검색하기">
-                      <SearchIcon color={"#FFFFFF"} />
-                    </IconButton>
                   </div>
                 }
                 iconStyleRight={
@@ -65,6 +87,15 @@ class AppContainer extends Component {
                   }
                 }
                 showMenuIconButton={true}/>
+          <div className="container-fluid">
+            <div className="col-md-2 divider">
+              <SideBar />
+            </div>
+            <div className="col-md-10 divider">
+              <TextPanel />
+            </div>
+          </div>
+        </div>
       </MuiThemeProvider>
     );
   }
