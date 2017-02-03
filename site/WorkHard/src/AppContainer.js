@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import IconButton from 'material-ui/IconButton';
 import NotificationIcon from 'material-ui/svg-icons/social/notifications';
 import SettingsIcon from 'material-ui/svg-icons/action/settings';
 import SearchIcon from 'material-ui/svg-icons/action/search';
@@ -14,6 +15,7 @@ class AppContainer extends Component {
       muiTheme: getMuiTheme({
         palette: {
           primary1Color: "#2196f3",
+          accent1Color: "#152542"
         },
         appBar: {
           height: 60,
@@ -37,9 +39,15 @@ class AppContainer extends Component {
                     asrht1228@gmail.com
                     </span>
                     <span className="caret profile-drop" style={{color: "white"}}></span>
-                    <NotificationIcon className="profile-noti" color={"#FFFFFF"} />
-                    <SettingsIcon className="profile-setting" color={"#FFFFFF"} />
-                    <SearchIcon className="profile-search" color={"#FFFFFF"} />
+                    <IconButton className="profile-noti" tooltip="알림">
+                      <NotificationIcon color={"#FFFFFF"} />
+                    </IconButton>
+                    <IconButton className="profile-setting" tooltip="환경 설정">
+                      <SettingsIcon color={"#FFFFFF"} />
+                    </IconButton>
+                    <IconButton className="profile-search" tooltip="검색하기">
+                      <SearchIcon color={"#FFFFFF"} />
+                    </IconButton>
                   </div>
                 }
                 iconStyleRight={
