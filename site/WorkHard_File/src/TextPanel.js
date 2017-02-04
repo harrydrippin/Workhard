@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
+import DdUpload from './dd_upload.png';
 
 var lipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae consectetur est, faucibus tempor massa. Cras sagittis diam quam. Quisque euismod diam ut turpis egestas, vel rhoncus nisi porttitor. Nullam a tempus ligula, ac eleifend sapien. Cras at ante ipsum. Suspendisse potenti. Duis lacinia lobortis vestibulum. Sed feugiat vestibulum pulvinar. Maecenas vestibulum diam ut libero euismod porttitor in vitae purus. Proin eu elit quam.\n Vivamus luctus lectus sit amet enim facilisis, a auctor lacus facilisis. Praesent nec tincidunt enim, vitae rutrum mi. Sed non enim eget odio commodo convallis ac sit amet arcu. Nullam imperdiet lorem vitae consequat pellentesque. Phasellus ut mattis ligula. Sed ac velit scelerisque nisl dapibus vehicula. Quisque tincidunt et mi vitae aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu ante urna.\nIn hac habitasse platea dictumst. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras molestie semper ipsum ut tempor. Fusce fringilla, nisl sed sollicitudin pellentesque, quam tellus feugiat dolor, ac malesuada arcu turpis non augue. Donec nunc eros, elementum vitae mi ac, cursus posuere ante. Etiam sollicitudin tempus placerat. Vivamus hendrerit mi nec eros malesuada, et varius felis auctor. Duis ac lorem sit amet justo tincidunt tempus. Maecenas imperdiet pellentesque ante ac congue. Quisque vel lacus urna. Vestibulum fermentum tristique tincidunt. Etiam in tincidunt orci. Morbi egestas, odio eu congue pharetra, turpis ligula accumsan dui, quis consectetur urna nibh ut nisi. Sed ipsum augue, varius a mollis commodo, vulputate at mauris. Morbi ornare nisi velit.";
 
@@ -48,7 +49,7 @@ class PPTPanel extends Component {
                   최종 수정 날짜 2017.02.05 작성자 asrht1228
                 </div>
                 <div className="pptpanel-thumb-body">
-                  <img src="http://placehold.it/720x400"></img>
+                  <img src={DdUpload}></img>
                 </div>
               </div>
             </div>
