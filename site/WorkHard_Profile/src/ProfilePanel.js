@@ -39,7 +39,8 @@ class ContentPanel extends Component {
     return (
       <div className="col-md-4 panel-item">
         <div className="panel-item-wrapper">
-          <div className="panel-item-header">
+          <a href="#" className="hover-a">
+	  <div className="panel-item-header">
             서양철학:쟁점과토론 기말 팀과제 4조
           </div>
           <div className="panel-item-body">
@@ -52,6 +53,7 @@ class ContentPanel extends Component {
 
 (3) 정성적 평가 (20%)<br />
           </div>
+	</a>
         </div>
       </div>
     );
