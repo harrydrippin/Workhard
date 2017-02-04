@@ -1,0 +1,95 @@
+html, body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h3 {
+  line-height: 30px;
+}
+
+.h3-divider {
+  margin-top: 70px;
+}
+
+h6 {
+  font-size: 1em;
+  color: #666666;
+}
+
+.navbar-default {
+  background-color: white;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+.navbar-brand-img {
+  width: 150px;
+  line-height: 64px;
+}
+
+.navbar-link {
+  font-size: 1em;
+  vertical-align: middle;
+  border: 0;
+}
+
+.navbar-link-button {
+  margin: 15px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+  border-radius: 0px;
+  border: transparent;
+  box-shadow: 1px 1px 4px #888888;
+}
+
+#login-part {
+  margin-left: 100px;
+}
+
+#signup-part {
+  background-color: #2196f3;
+  color: white;
+  margin-left: 10px;
+}
+
+.section-intro > .container {
+  height: 500px;
+  margin-top: 200px;
+}
+
+.img-box-logo {
+  width: 200px;
+}
+
+.img-first {
+  width: 700px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.section-panel {
+  background-color: #ebebeb;
+}
+
+.section-panel > .container {
+  height: 900px;
+  padding-top: 100px;
+}
+
+.section-eval > .container {
+  height: 500px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+footer {
+  background-color: #333333;
+  padding: 50px;
+}
+
+.img-footer {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
